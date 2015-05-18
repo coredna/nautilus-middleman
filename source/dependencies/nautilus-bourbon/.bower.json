@@ -1,0 +1,14 @@
+{
+  "name": "nautilus-bourbon",
+  "homepage": "https://github.com/coredna/nautilus-bourbon",
+  "_release": "d2212f20cc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "integration",
+    "commit": "d2212f20cc64f42bf9f6c1d319dfe8d3af587072"
+  },
+  "_source": "git@github.com:coredna/nautilus-bourbon.git",
+  "_target": "integration",
+  "_originalSource": "git@github.com:coredna/nautilus-bourbon.git",
+  "_direct": true
+}

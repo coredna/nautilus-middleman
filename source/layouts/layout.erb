@@ -1,0 +1,65 @@
+<!doctype html>
+
+<%= partial "html" %>
+
+  <head>
+    <!-- Meta -->
+    <%= partial "head/meta" %>
+
+    <!-- Title -->
+    <%= partial "head/title" %>
+
+    <!-- Icons -->
+    <%= partial "head/link" %>
+
+    <!-- Stylesheets -->
+    <%= partial "head/css" %>
+
+    <!-- Javascripts -->
+    <%= partial "head/js" %>
+  </head>
+  
+  <body class="page <%= page_classes %>">
+
+    <header class="header" role="banner">
+
+      <div class="header__inner">
+
+        <%= partial "components/toggle", :locals => {
+          'modifier' => 'navigation',
+          'attributes' => {
+            'activate' => 'navigation',
+            'deactivate' => 'search'
+          }
+        }%>
+
+        <%= partial "components/logo" %>
+
+      </div>
+
+    </header>
+
+    <%= partial "components/navigation" %>
+
+    <%= yield %>
+
+    <footer class="footer" role="contentinfo">
+
+      <div class="footer__inner">
+
+        <%= partial "components/menu", :locals => {
+          'modifier' => 'social'
+        }%>
+
+        <%= partial "components/menu", :locals => {
+          'modifier' => 'auxiliary'
+        }%>
+
+      </div>
+
+    </footer>
+
+    <%= partial "foot/js" %>
+
+  </body>
+</html>

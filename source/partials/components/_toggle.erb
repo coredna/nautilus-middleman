@@ -1,0 +1,8 @@
+<% modifier ||= "" %>
+<% attributes ||= "" %>
+
+<section class="toggle <%= modifier.empty? ? "" : "toggle--#{modifier}" %>">
+  <div class="toggle__inner">
+    <button class="toggle__button" <% attributes.each do | k, v | %>data-<%= k %>="<%= v %>" <% end %> role="button" aria-pressed="false" name="Toggle <%= modifier %>" type="button"></button>
+  </div>
+</section>

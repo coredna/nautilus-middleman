@@ -1,0 +1,23 @@
+social:
+  heading: "Menu: Social"
+  copy: "This is the social menu."
+  items:
+    - name: "Facebook"
+      url: "http://facebook.com"
+      offsite: true
+    - name: "Twitter"
+      url: "http://twitter.com"
+      offsite: true
+    - name: "LinkedIn"
+      url: "http://linkedin.com"
+      offsite: true
+auxiliary:
+  heading: "Menu: Auxiliary"
+  copy: "This is the auxiliary menu."
+  items:
+    - name: "Link One"
+      url: "link-one"
+    - name: "Link Two"
+      url: "link-two"
+    - name: "Link Three"
+      url: "link-three"

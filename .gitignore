@@ -1,0 +1,11 @@
+# Ignore the SASS cache
+/.sass-cache
+
+# Ignore any .DS_store files
+.DS_Store
+
+# Ignore local ENV vars
+env.rb
+
+# Ignore local rbenv version file
+.ruby-version

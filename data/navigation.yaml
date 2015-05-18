@@ -1,0 +1,17 @@
+items:
+- name: "Alpha"
+  url: /alpha
+- name: "Beta"
+  url: /beta
+  subnavigation:
+  - name: "Beta One"
+    url: /beta/one
+  - name: "Beta Two"
+    url: /beta/two
+  - name: "Beta Three"
+    url: /beta/three
+- name: "Chi"
+  url: /chi
+  subnavigation:
+  - name: "Chi One"
+    url: /chi/one

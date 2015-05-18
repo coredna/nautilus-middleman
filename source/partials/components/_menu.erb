@@ -1,0 +1,20 @@
+<% modifier ||= "" %>
+<% heading ||= data.menus.send(modifier).heading %>
+<% copy ||= data.menus.send(modifier).copy %>
+<% items ||= data.menus.send(modifier).items %>
+
+<section class="menu <%= modifier.empty? ? "" : "menu--#{modifier}" %>">
+  <div class="menu__content">
+    <h3 class="menu__heading"><%= heading %></h3>
+    <p class="menu__copy"><%= copy %></p>
+  </div>
+  <ul class="menu__list">
+    <% items.each_with_index do | item, i | %>
+      <li class="menu__item">
+        <a class="menu__link" href="<%= item.url %>" title="<%= item.name %>" <%= item.offsite ? "target=\"_blank\"" : '' %>>
+          <span class="menu__copy"><%= item.name %></span>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,11 @@
+<% heading ||= data.site.title %>
+<% image ||= '/media/images/placeholders/logo.png' %>
+
+<section class="logo">
+  <div class="logo__inner">
+    <a class="logo__link" href="/">
+      <img class="logo__image" src="<%= image %>" />
+      <span class="logo__heading"><%= heading %></span>
+    </a>
+  </div>
+</section>

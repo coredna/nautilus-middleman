@@ -1,0 +1,26 @@
+<nav class="navigation" role="navigation">
+  <div class="navigation__inner">
+    <ul class="navigation__list">
+      <div class="navigation__row">
+        <% data.navigation.items.each_with_index do | item, i | %>
+          <li class="navigation__item">
+            <a class="navigation__link" href="<%= item.url %>"><span class="navigation__copy"><%= item.name %></span></a>
+          </li>
+          <% if item.subnavigation %>
+            <section class="subnavigation">
+              <div class="subnavigation__inner">
+                <ul class="subnavigation__list">
+                  <% item.subnavigation.each_with_index do | item, i | %>
+                    <li class="subnavigation__item">
+                      <a class="subnavigation__link" href="<%= item.url %>"><span class="subnavigation__copy"><%= item.name %></span></a>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+            </section>
+          <% end %>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+</nav>
